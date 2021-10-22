@@ -119,3 +119,10 @@
     flex-direction: column;
   }
 }
+
+.SideBar {
+  background-color: rgb(167, 109, 3);
+  font-family: cursive;
+  font-size: 36px !important;
+  position: fixed;
+}

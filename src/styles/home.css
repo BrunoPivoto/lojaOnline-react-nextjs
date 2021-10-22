@@ -1,0 +1,27 @@
+.App .Cards{
+    
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.App .SideBar {
+    background-color: rgb(167, 109, 3);
+    font-family: cursive;
+    font-size: 36px !important;
+    position: fixed;
+}
+
+.sidenav---sidenav---_2tBP.sidenav---expanded---1KdUL .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- .sidenav---navicon---3gCRo + .sidenav---navtext---1AE_f {
+    font-size: 25px !important;
+}
+
+.sidenav---sidenav---_2tBP *, .sidenav---sidenav---_2tBP *:before, .sidenav---sidenav---_2tBP *:after {
+    font-size: 20px !important;
+}

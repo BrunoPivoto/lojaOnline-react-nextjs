@@ -1,0 +1,17 @@
+:root {
+    --bg-button: rgb(255, 255, 255);
+    --border-button: solid 1px green;
+}
+
+.Button {
+    font-size: 1.4rem;
+    background-color: var(--bg-button);
+    border-radius: 50px;
+    border-right: var(--border-button);
+    border-left: var(--border-button);
+    border-bottom: var(--border-button);
+    outline: none;
+    font-family: fantasy;
+    color: black;
+    cursor: pointer;
+}

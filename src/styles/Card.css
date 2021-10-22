@@ -1,0 +1,32 @@
+.Card {
+    border: 10px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    max-width: 350px;
+}
+
+.Card .Title {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Card .Content {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding: 20px;
+    justify-content: center;
+}
+
+.Card .Price{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
