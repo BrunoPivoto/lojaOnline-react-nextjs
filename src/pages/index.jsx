@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import home from '../images/home.png'
-import cliente from '../images/cliente.png'
-import eu from '../images/eu.png'
-
+import home from '/public/home.png'
+import cliente from '/public/cliente.png'
+import eu from '/public/eu.png'
+import rafa from '/public/rafa.png'
+import Image from 'next/image'
 
 import SideNav, { NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 
@@ -10,58 +11,50 @@ import SideNav, { NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
 
-export default function Inicio() {
-    
-    
-    
+export default function Inicio () {
+
     return (
-        <div>
+        <div className="Inicio">
             <h1>Bem vindo</h1>
-        <SideNav className="SideBar"
-            onSelect={( selected ) => {
-                console.log( 'Teste' )
-            }}
-        >
-            <SideNav.Toggle />
-            <SideNav.Nav defaultSelected="home">
-                <NavItem eventKey="home">
-                    <NavIcon>
-                        <img src={home} alt="" width="50%" />
-                    </NavIcon>
-                    <NavText>
-                       <Link href="/home">Home</Link>
-                    </NavText>
-                </NavItem>
-                <NavItem eventKey="cliente">
-                    <NavIcon>
-                        <img src={cliente} alt="" width="50%" />
-                    </NavIcon>
-                    <NavText>
-                    <Link href="/login">Login</Link>
-                    </NavText>
-                    <NavItem eventKey="cliente/perfil">
+            <SideNav className="SideBar"
+                onSelect={( selected ) => {
+                    console.log( 'Teste' )
+                }}
+            >
+                <SideNav.Toggle />
+                <SideNav.Nav defaultSelected="home">
+                    <NavItem eventKey="home">
+                        <NavIcon>
+                            <Link href="/home"><Image src={home} alt="" width={50} height={50} /></Link>
+                        </NavIcon>
                         <NavText>
-                            Perfil
+                            <Link href="/home">Home</Link>
                         </NavText>
                     </NavItem>
-                    <NavItem eventKey="cliente/pedidos">
+                    <NavItem eventKey="cliente">
+                        <NavIcon>
+                            <Image src={cliente} alt="" width={45} height={45} />
+                        </NavIcon>
                         <NavText>
-                            Pedidos
+                            Login
                         </NavText>
+                        <NavItem eventKey="cliente/perfil">
+                            <NavText>
+                                <Link href="/login">Usuário</Link>
+                            </NavText>
+                        </NavItem>
+                        <NavItem eventKey="cliente/pedidos">
+                            <NavText>
+                                <Link href="/vendedor">Vendedor</Link>
+                            </NavText>
+                        </NavItem>
                     </NavItem>
-                </NavItem>
-                <NavItem eventKey="sair">
-                    <NavIcon>
-                    </NavIcon>
-                    <NavText>
-                    <Link href="/">Sair</Link>
-                    </NavText>
-                </NavItem>
-            </SideNav.Nav>
-        </SideNav>
-            <Link href="https://github.com/BrunoPivoto"><button>Bruno<img src={eu} alt="" /> </button></Link>
-            <div>
-            <Link href="https://github.com/RafaelaTerra"><button>Rafaela</button></Link>
-        </div></div>
+                </SideNav.Nav>
+            </SideNav>
+            <p>Bruno</p>
+            <Link href="https://github.com/BrunoPivoto"><Image src={eu} alt="" width={200} height={200} className="img" /></Link>
+            <p>Rafaela</p>
+            <Link href="https://github.com/RafaelaTerra"><Image src={rafa} alt="" width={200} height={200} className="img" /></Link>
+        </div>
     )
 }

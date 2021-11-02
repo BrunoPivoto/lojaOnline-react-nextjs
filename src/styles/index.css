@@ -3,6 +3,7 @@ body {
     color: white;
     text-align: center;
     font-size: 1.4rem;
+    padding: auto;
 }
 
 h1, h2, h3 {
@@ -13,4 +14,33 @@ h1, h2, h3 {
 
 h2, h3 {
     margin: 0;
+}
+
+.Inicio .img{
+    padding: 300px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.Inicio .SideBar {
+    background-color: rgb(167, 109, 3);
+    font-family: cursive;
+    font-size: 36px !important;
+    position: fixed;
+    
+}
+
+.sidenav---sidenav---_2tBP.sidenav---expanded---1KdUL .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- .sidenav---navicon---3gCRo + .sidenav---navtext---1AE_f {
+    font-size: 25px !important;
+    color: black;
+}
+
+.sidenav---sidenav---_2tBP *, .sidenav---sidenav---_2tBP *:before, .sidenav---sidenav---_2tBP *:after {
+    font-size: 20px !important;
+    color: black;
+}
+
+.sidenav---navtext---1AE_f{
+    color: black;
 }

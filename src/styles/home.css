@@ -16,6 +16,14 @@
     font-family: cursive;
     font-size: 36px !important;
     position: fixed;
+    
+}
+
+.img{
+    padding: 300px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 .sidenav---sidenav---_2tBP.sidenav---expanded---1KdUL .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- .sidenav---navicon---3gCRo + .sidenav---navtext---1AE_f {

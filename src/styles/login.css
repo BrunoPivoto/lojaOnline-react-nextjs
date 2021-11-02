@@ -1,0 +1,20 @@
+.login .Card{
+    padding: 10px;
+    justify-content: center;
+    margin-left: 250px;
+    margin-right: 150px;
+    background-color: rgb(54, 80, 57);
+    border-radius: 50px;
+
+}
+.login .Button{
+    margin-top: 5px;
+    padding: 10px;
+}
+.login .input{
+    padding: 10px;
+    border-radius: 10px;
+}
+.login .texto{
+    padding: 5px;
+}
